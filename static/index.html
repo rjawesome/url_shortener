@@ -101,7 +101,11 @@
     const short = form["short"].value
 
     db.collection("urls").doc(short).set({ long })
-      .then( () => alert(`URL Created at https://s.rohanj.dev//${short}`))
+      .then( () => { 
+        alert(`URL Created at https://s.rohanj.dev//${short}`)
+        form["long"].value = ""
+        form["short"].value = ""
+      })
       .catch( () => alert("Short URL Taken") )
   }
 </script>
