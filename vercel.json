@@ -4,6 +4,7 @@
     { "source": "/bruh/:id", "destination": "/api/" }
   ],
   "builds": [
-    { "src": "static/*", "use": "@vercel/static" }
+    { "src": "static/*", "use": "@vercel/static" },
+    { "src": "api/*", "use": "@vercel/node" }
   ]
 }
