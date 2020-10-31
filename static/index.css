@@ -50,7 +50,7 @@ button:active {
   margin-top: 0px;
   color: #5e5e5e;
   font-size: 0.75rem;
-  cursor: help;
+  cursor: pointer;
 }
 #muted:hover {
   text-decoration: underline;
