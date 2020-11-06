@@ -22,7 +22,7 @@
         <h1>S.</h1>
         <h2>A simple URL shortener</h2>
         <input placeholder="Long URL" type="url" name="long" required />
-        <input placeholder="Short URL Tag" name="short" required />
+        <input placeholder="Short URL Tag" name="short" required pattern="^[^\/]*$" title="Please enter a value without a / character" />
         <button>Create URL!</button>
         <br />
         <div class="tooltip">
